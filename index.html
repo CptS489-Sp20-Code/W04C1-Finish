@@ -308,7 +308,35 @@ small">Courses</span></a>
         </div>
     </div>
 </div>
-  <!-- END MODAL DIALOG BOX DEFINITION-->
+<!-- END MODAL DIALOG BOX DEFINITION-->
+<!-- START CONFIRM DELETE DIALOG BOX DEFINITION-->
+<div id="deleteRoundModal" class="modal" role="dialog">
+  <!-- Modal content-->
+  <div class="modal-content" style="background: #fff">
+      <div class="modal-header">
+        <p class="modal-title" style="text-align: center;
+        width:100%"><b>Confirm Round Deletion</b></p>
+          <button onclick="cancelDelete()" 
+            style="border: 2px solid black; 
+            background-color: black; color: white;
+            float: right">&times;</button>
+        </h3></div>
+      <div class="modal-body">
+        <center>
+        <h4>Are you sure that you want to delete this round?</h4>
+        </center>
+      <div class="modal-footer" style="display: flex; justify-content: center;">
+            <button id="confirmDelete" class="btn btn-primary"
+            onclick="deleteRound()">
+            Yes, delete round</button>
+            <button class=" btn btn-warning" onclick="cancelDelete()">
+            No, do not delete round</button>
+      </div>
+      </div>
+</div>
+</div>
+<!-- END CONFIRM DELETE DIALOG BOX DEFINITION-->
+
   <!-- Begin SCRIPT section of document. -->
   
   <script src="scripts/includeHTML.js"></script>
