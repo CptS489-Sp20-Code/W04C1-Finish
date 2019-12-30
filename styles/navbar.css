@@ -237,3 +237,29 @@ body {
     pointer-events: none;
     opacity: 0.4;
 }
+
+/* The floating action button */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:60px;
+	right:40px;
+	background-color:#13294E;
+	color:white;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.floatButton a:visited {
+  color: white !important;
+}
+
+.floatButton a:active {
+  color: white !important;
+}
